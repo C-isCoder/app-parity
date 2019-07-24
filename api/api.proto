@@ -1,0 +1,52 @@
+// 定义项目 API 的 proto 文件 可以同时描述 gRPC 和 HTTP API
+// protobuf 文件参考:
+//  - https://developers.google.com/protocol-buffers/
+syntax = "proto3";
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+import "google/protobuf/empty.proto";
+import "google/api/annotations.proto";
+import public "app-parity/api/data/user.proto";
+import public "app-parity/api/data/drug.proto";
+
+// package 命名使用 {appid}.{version} 的方式, version 形如 v1, v2 ..
+package api.service.v1;
+
+option go_package = "api.service.v1";
+option (gogoproto.goproto_enum_prefix_all) = false;
+option (gogoproto.goproto_getters_all) = false;
+option (gogoproto.unmarshaler_all) = true;
+option (gogoproto.marshaler_all) = true;
+option (gogoproto.sizer_all) = true;
+
+// 用户服务
+service UserService {
+    // 用户登录
+    rpc Login (LoginReq) returns (LoginResp) {
+        option (google.api.http) = {
+            post:"/user/v1/login"
+        };
+    };
+
+    // 用户注册
+    rpc Register (RegisterReq) returns (LoginResp) {
+        option (google.api.http) = {
+            post:"/user/v1/register"
+        };
+    }
+}
+// 药品搜索服务
+service DrugService {
+    // 药品关键字搜索
+    rpc DrugSearch (SearchReq) returns (SearchResp) {
+        option (google.api.http) = {
+            post:"/drug/v1/search"
+        };
+    }
+    // 获取所有药品列表
+    rpc GetDrugs (DrugsReq) returns (DrugsResp) {
+        option (google.api.http) = {
+            get:"/drug/v1/drugs"
+        };
+    }
+}

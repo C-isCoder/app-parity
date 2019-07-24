@@ -1,0 +1,9 @@
+
+# This is a TOML document. Boom~
+[jwt]
+    secret = "ea9591fe5184ee2a9ed3453a9a44eac0"
+
+[log]
+    logDir="./log/"
+    logHost="www.congxiaodan.cn"
+    stdout=true

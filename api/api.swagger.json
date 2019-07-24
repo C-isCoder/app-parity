@@ -1,0 +1,347 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "api/api.proto",
+        "version": "1"
+    },
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "consumes": [
+        "application/json",
+        "multipart/form-data"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/drug/v1/drugs": {
+            "get": {
+                "summary": "获取所有药品列表",
+                "responses": {
+                    "200": {
+                        "description": "A successful response.",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "integer"
+                                },
+                                "message": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/.api.service.v1.DrugsResp"
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "pageSize",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "pageNum",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer"
+                    }
+                ],
+                "tags": [
+                    "api.service.v1.DrugService"
+                ]
+            }
+        },
+        "/drug/v1/search": {
+            "post": {
+                "summary": "药品关键字搜索",
+                "responses": {
+                    "200": {
+                        "description": "A successful response.",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "integer"
+                                },
+                                "message": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/.api.service.v1.SearchResp"
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/.api.service.v1.SearchReq"
+                        }
+                    }
+                ],
+                "tags": [
+                    "api.service.v1.DrugService"
+                ]
+            }
+        },
+        "/user/v1/login": {
+            "post": {
+                "summary": "用户登录",
+                "responses": {
+                    "200": {
+                        "description": "A successful response.",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "integer"
+                                },
+                                "message": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/.api.service.v1.LoginResp"
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/.api.service.v1.LoginReq"
+                        }
+                    }
+                ],
+                "tags": [
+                    "api.service.v1.UserService"
+                ]
+            }
+        },
+        "/user/v1/register": {
+            "post": {
+                "summary": "用户注册",
+                "responses": {
+                    "200": {
+                        "description": "A successful response.",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "type": "integer"
+                                },
+                                "message": {
+                                    "type": "string"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/.api.service.v1.LoginResp"
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/.api.service.v1.RegisterReq"
+                        }
+                    }
+                ],
+                "tags": [
+                    "api.service.v1.UserService"
+                ]
+            }
+        }
+    },
+    "definitions": {
+        ".api.service.v1.Drug": {
+            "type": "object",
+            "properties": {
+                "level0": {
+                    "type": "integer"
+                },
+                "level1": {
+                    "type": "integer"
+                },
+                "level2": {
+                    "type": "integer"
+                },
+                "wholesaleId": {
+                    "type": "integer"
+                },
+                "drugName": {
+                    "type": "string"
+                },
+                "providerId": {
+                    "type": "integer"
+                },
+                "providerName": {
+                    "type": "string"
+                },
+                "specification": {
+                    "type": "string"
+                },
+                "unit": {
+                    "type": "string"
+                },
+                "manufacturer": {
+                    "type": "string"
+                },
+                "approvalNumber": {
+                    "type": "string"
+                },
+                "validDate": {
+                    "type": "string"
+                },
+                "chainPrice": {
+                    "type": "string"
+                },
+                "disPrice": {
+                    "type": "string"
+                },
+                "minPrice": {
+                    "type": "string"
+                },
+                "maxPrice": {
+                    "type": "string"
+                },
+                "oldPrice": {
+                    "type": "string"
+                },
+                "price": {
+                    "type": "string"
+                }
+            },
+            "description": "药品"
+        },
+        ".api.service.v1.DrugsReq": {
+            "type": "object",
+            "properties": {
+                "pageSize": {
+                    "type": "integer"
+                },
+                "pageNum": {
+                    "type": "integer"
+                }
+            },
+            "description": "药品列表请求参数"
+        },
+        ".api.service.v1.DrugsResp": {
+            "type": "object",
+            "properties": {
+                "drugs": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/.api.service.v1.Drug"
+                    }
+                }
+            },
+            "description": "药品列表返回参数"
+        },
+        ".api.service.v1.LoginReq": {
+            "type": "object",
+            "properties": {
+                "account": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                }
+            },
+            "description": "登录请求数据",
+            "required": [
+                "account",
+                "password"
+            ]
+        },
+        ".api.service.v1.LoginResp": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "account": {
+                    "type": "string"
+                },
+                "token": {
+                    "type": "string"
+                },
+                "isAdmin": {
+                    "type": "boolean"
+                }
+            },
+            "description": "登录响应数据"
+        },
+        ".api.service.v1.RegisterReq": {
+            "type": "object",
+            "properties": {
+                "account": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                }
+            },
+            "description": "注册请求数据",
+            "required": [
+                "account",
+                "name",
+                "password"
+            ]
+        },
+        ".api.service.v1.SearchReq": {
+            "type": "object",
+            "properties": {
+                "key": {
+                    "type": "string"
+                },
+                "pageSize": {
+                    "type": "integer"
+                },
+                "pageNum": {
+                    "type": "integer"
+                }
+            },
+            "description": "搜索请求参数",
+            "required": [
+                "key",
+                "pageSize",
+                "pageNum"
+            ]
+        },
+        ".api.service.v1.SearchResp": {
+            "type": "object",
+            "properties": {
+                "count": {
+                    "type": "integer"
+                },
+                "drugs": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/.api.service.v1.Drug"
+                    }
+                }
+            },
+            "description": "搜索返回参数"
+        }
+    }
+}

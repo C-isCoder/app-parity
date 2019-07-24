@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+package api.service.v1;
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+import "google/protobuf/empty.proto";
+import "google/api/annotations.proto";
+
+option go_package = "api.service.v1";
+option (gogoproto.goproto_enum_prefix_all) = false;
+option (gogoproto.goproto_getters_all) = false;
+option (gogoproto.unmarshaler_all) = true;
+option (gogoproto.marshaler_all) = true;
+option (gogoproto.sizer_all) = true;
+
+// 用户数据
+message User {
+    // id
+    int64 Uid = 1 [(gogoproto.jsontag) = "uid"];
+    // 姓名
+    string Name = 2 [(gogoproto.jsontag) = "name"];
+    // 账号
+    string Account = 3 [(gogoproto.jsontag) = "account"];
+    // 密码
+    string Password = 4 [(gogoproto.jsontag) = "password"];
+    // 令牌
+    string Token = 5 [(gogoproto.jsontag) = "token"];
+    // 是否管理员
+    bool IsAdmin = 6 [(gogoproto.jsontag) = "isAdmin"];
+}
+
+// 登录请求数据
+message LoginReq {
+    // *账号
+    string account = 1 [(gogoproto.moretags) = 'form:"account" validate:"required"'];
+    // *密码
+    string password = 2 [(gogoproto.moretags) = 'form:"password" validate:"required"'];
+}
+// 登录响应数据
+message LoginResp {
+    // 用户名
+    string Name = 1 [(gogoproto.jsontag) = "name"];
+    // 账号
+    string Account = 2 [(gogoproto.jsontag) = "account"];
+    // 令牌
+    string Token = 3 [(gogoproto.jsontag) = "token"];
+    // 是否是管理员
+    bool IsAdmin = 4 [(gogoproto.jsontag) = "isAdmin"];
+}
+// 注册请求数据
+message RegisterReq {
+    // *账号
+    string account = 1 [(gogoproto.moretags) = 'form:"account" validate:"required"'];
+    // *姓名
+    string name = 2 [(gogoproto.moretags) = 'form:"name" validate:"required"'];
+    // *密码
+    string password = 3 [(gogoproto.moretags) = 'form:"password" validate:"required"'];
+}

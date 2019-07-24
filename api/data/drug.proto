@@ -1,0 +1,83 @@
+syntax = "proto3";
+
+package api.service.v1;
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+import "google/protobuf/empty.proto";
+import "google/api/annotations.proto";
+
+option go_package = "api.service.v1";
+option (gogoproto.goproto_enum_prefix_all) = false;
+option (gogoproto.goproto_getters_all) = false;
+option (gogoproto.unmarshaler_all) = true;
+option (gogoproto.marshaler_all) = true;
+option (gogoproto.sizer_all) = true;
+
+// 搜索请求参数
+message SearchReq {
+    // 关键字
+    string key = 1 [(gogoproto.moretags) = 'form:"key" validate:"required"'];
+    // 一页数量
+    int32 pageSize = 2 [(gogoproto.jsontag) = "pageSize", (gogoproto.moretags) = 'form:"pageSize"validate:"required"'];
+    // 第几页
+    int32 pageNum = 3 [(gogoproto.jsontag) = "pageNum", (gogoproto.moretags) = 'form:"pageNum"validate:"required"'];
+}
+
+// 搜索返回参数
+message SearchResp {
+    // 符合结果总数
+    int32 count = 1;
+    // 当前搜索结果列表
+    repeated Drug drugs = 2;
+}
+// 药品列表请求参数
+message DrugsReq {
+    // 一页数量
+    int32 pageSize = 1 [(gogoproto.jsontag) = "pageSize"];
+    // 第几页
+    int32 pageNum = 2 [(gogoproto.jsontag) = "pageNum"];
+}
+// 药品列表返回参数
+message DrugsResp {
+    // 药品列表数据
+    repeated Drug drugs = 1;
+}
+// 药品
+message Drug {
+    // 一级类别ID
+    int32 level0 = 1;
+    // 二级类别ID
+    int32 level1 = 2;
+    // 三级类别ID
+    int32 level2 = 3;
+    // id
+    int32 wholesaleId = 4;
+    // 名称
+    string drugName = 5;
+    // 供货商 ID
+    int32 providerId = 6;
+    // 供货商名称
+    string providerName = 7;
+    // 规格
+    string specification = 8;
+    // 单位
+    string unit = 9;
+    // 生产商
+    string manufacturer = 10;
+    // 批号
+    string approvalNumber = 11;
+    // 有效期
+    string validDate = 12;
+    // 原价
+    string chainPrice = 13;
+    // 折扣价
+    string disPrice = 14;
+    // 最低价
+    string minPrice = 15;
+    // 最高价
+    string maxPrice = 16;
+    // 旧价格
+    string oldPrice = 17;
+    // 抢购价
+    string price = 18;
+}
