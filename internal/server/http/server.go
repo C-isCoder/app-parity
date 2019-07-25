@@ -18,6 +18,8 @@ var (
 		"http://192.168.1.254:8080",
 		"http://localhost:8080",
 		"http://bijia.ybr1.cn",
+		"http://bijia.ybr1.cn:8000",
+		"http://bijia.ybr1.cn:8080",
 	}
 	_csrf = []string{
 		"*",
