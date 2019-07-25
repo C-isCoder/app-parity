@@ -1,10 +1,10 @@
 package dao
 
 import (
+	pb "app-parity/api"
 	"context"
 	"github.com/bilibili/kratos/pkg/database/sql"
 	"github.com/bilibili/kratos/pkg/log"
-	pb "app-parity/api"
 	"time"
 )
 

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbea4fa1-051a-4d3d-95bb-392955c3b0c0" name="Default Changelist" comment="" />
+    <list default="true" id="fbea4fa1-051a-4d3d-95bb-392955c3b0c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/dao/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/dao/user.go" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,97 +40,65 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="ysb_db: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ysb_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="ysb_db: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../app-parity/configs/application.toml">
+        <entry file="file://$PROJECT_DIR$/internal/dao/dao.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="10" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="10" />
+            <state relative-caret-position="562">
+              <caret line="116" column="1" selection-start-line="116" selection-start-column="1" selection-end-line="116" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../app-parity/internal/service/user.go">
+        <entry file="file://$PROJECT_DIR$/internal/dao/user.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
-              <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../app-parity/configs/memcache.toml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="9" selection-start-line="1" selection-end-line="1" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../app-parity/internal/dao/dao.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="74" column="21" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="21" />
+            <state relative-caret-position="201">
+              <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+              <folding>
+                <element signature="e#13#148#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../app-parity/internal/server/http/server.go">
+        <entry file="file://$PROJECT_DIR$/configs/http.toml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            <state relative-caret-position="57">
+              <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.2.1-0.20190722040647-89ee902bb4f4/pkg/net/http/blademaster/middleware/auth/auth.go">
+        <entry file="file://$PROJECT_DIR$/internal/service/user.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="687">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="323">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="27" />
+              <folding>
+                <element signature="e#17#208#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.2.1-0.20190722040647-89ee902bb4f4/pkg/cache/memcache/memcache.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="192" column="31" selection-start-line="192" selection-start-column="31" selection-end-line="192" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../app-parity/internal/service/service.go">
+        <entry file="file://$PROJECT_DIR$/go.mod">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../app-parity/cmd/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../app-parity/internal/service/drug.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -184,6 +157,9 @@
     </replaceStrings>
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.12.7/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
@@ -221,7 +197,6 @@
         <option value="$PROJECT_DIR$/server/mid/token.go" />
         <option value="$PROJECT_DIR$/server/http/server.go" />
         <option value="$PROJECT_DIR$/cmd/main.go" />
-        <option value="$PROJECT_DIR$/internal/dao/user.go" />
         <option value="$PROJECT_DIR$/configs/http.toml" />
         <option value="$PROJECT_DIR$/api/api.bm.go" />
         <option value="$PROJECT_DIR$/go.mod" />
@@ -236,15 +211,16 @@
         <option value="$PROJECT_DIR$/internal/service/service.go" />
         <option value="$PROJECT_DIR$/internal/dao/durg.go" />
         <option value="$PROJECT_DIR$/internal/server/http/server.go" />
-        <option value="$PROJECT_DIR$/../app-parity/api/api.proto" />
-        <option value="$PROJECT_DIR$/../app-parity/configs/application.toml" />
-        <option value="$PROJECT_DIR$/../app-parity/internal/service/service.go" />
-        <option value="$PROJECT_DIR$/../app-parity/internal/service/user.go" />
-        <option value="$PROJECT_DIR$/../app-parity/internal/server/http/server.go" />
+        <option value="$PROJECT_DIR$/api/api.proto" />
+        <option value="$PROJECT_DIR$/configs/application.toml" />
+        <option value="$PROJECT_DIR$/internal/service/service.go" />
+        <option value="$PROJECT_DIR$/internal/service/user.go" />
+        <option value="$PROJECT_DIR$/internal/server/http/server.go" />
+        <option value="$PROJECT_DIR$/internal/dao/user.go" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="47" />
     <option name="y" value="23" />
     <option name="width" value="1873" />
@@ -255,6 +231,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,43 +249,52 @@
               <item name="app-parity" type="462c0819:PsiDirectoryNode" />
               <item name="internal" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="app-parity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app-parity" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DataGrid.QuickDoc.View" value="regular" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.data.extractors.current.id" value="HTML Table" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/data" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api/data" />
+      <recent name="$PROJECT_DIR$/api" />
+      <recent name="$PROJECT_DIR$/server/http/mid" />
+      <recent name="$PROJECT_DIR$/internal" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/internal" />
       <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$/api/data" />
       <recent name="$PROJECT_DIR$/server/http/mid" />
       <recent name="$PROJECT_DIR$/model/user" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/api/data" />
-      <recent name="$PROJECT_DIR$/api" />
-      <recent name="$PROJECT_DIR$/server/http/mid" />
-      <recent name="$PROJECT_DIR$/internal" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -371,11 +357,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="44" y="23" width="1876" height="1057" extended-state="6" />
+    <frame x="47" y="23" width="1873" height="1057" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21592148" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2179137" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="SQL Generator" visible="true" weight="0.32953367" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3284974" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3284974" />
@@ -388,13 +376,13 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="GraphQL" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32897604" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.43834198" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.43834198" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="make" order="3" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.16303162" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.1627526" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2006006" />
@@ -426,23 +414,9 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
-    <proxy>https://goproxy.io</proxy>
+    <proxy>direct</proxy>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/bilibili/kratos@v0.1.0/pkg/log/log.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1166">
-          <caret line="63" column="25" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/configs/redis.toml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/mid/cors.go" />
     <entry file="file:///usr/local/Cellar/go/1.12.7/libexec/src/net/http/status.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -451,92 +425,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/bilibili/kratos@v0.1.0/pkg/net/http/blademaster/cors.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/bilibili/kratos@v0.1.0/tool/kratos/run.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/bilibili/kratos@v0.1.0/tool/kratos/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.2/pkg/net/http/blademaster/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.2/pkg/net/http/blademaster/cors.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.4/pkg/conf/paladin/default.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.4/pkg/conf/paladin/map.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.4/pkg/cache/memcache/memcache.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="185" column="5" selection-start-line="185" selection-start-column="5" selection-end-line="185" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.4/pkg/net/http/blademaster/middleware/auth/auth.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/bilibili/kratos@v0.1.0/pkg/net/http/blademaster/cors.go" />
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/bilibili/kratos@v0.1.0/tool/kratos/run.go" />
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/bilibili/kratos@v0.1.0/tool/kratos/main.go" />
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.2/pkg/net/http/blademaster/server.go" />
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.2/pkg/net/http/blademaster/cors.go" />
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.4/pkg/conf/paladin/default.go" />
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.4/pkg/conf/paladin/map.go" />
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.4/pkg/cache/memcache/memcache.go" />
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.4/pkg/net/http/blademaster/middleware/auth/auth.go" />
     <entry file="file://$PROJECT_DIR$/internal/server/mid/token.go" />
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.5/pkg/net/http/blademaster/cors.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="96" column="45" selection-start-line="96" selection-start-column="45" selection-end-line="96" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.7/pkg/net/http/blademaster/middleware/auth/auth.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="128" column="23" selection-start-line="128" selection-start-column="23" selection-end-line="128" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.7/pkg/net/http/blademaster/middleware/auth/token.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/api/api.swagger.json">
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.5/pkg/net/http/blademaster/cors.go" />
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.7/pkg/net/http/blademaster/middleware/auth/auth.go" />
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.7/pkg/net/http/blademaster/middleware/auth/token.go" />
+    <entry file="file://$PROJECT_DIR$/api/api.swagger.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6072">
           <caret line="276" column="17" lean-forward="true" selection-start-line="276" selection-start-column="17" selection-end-line="276" selection-end-column="17" />
@@ -560,65 +462,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/golang/protobuf@v1.3.1/ptypes/empty/empty.pb.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding>
-            <element signature="e#104#180#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.10/pkg/cache/memcache/memcache.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="356" column="25" lean-forward="true" selection-start-line="356" selection-start-column="25" selection-end-line="356" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/internal/dao/user.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#13#151#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/internal/dao/mc.cache.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="40" column="30" lean-forward="true" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
-          <folding>
-            <element signature="e#866#1050#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.10/pkg/conf/paladin/value.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="153" column="21" lean-forward="true" selection-start-line="153" selection-start-column="21" selection-end-line="153" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/api/data/user.pb.go">
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/golang/protobuf@v1.3.1/ptypes/empty/empty.pb.go" />
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.10/pkg/cache/memcache/memcache.go" />
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.1.10/pkg/conf/paladin/value.go" />
+    <entry file="file://$PROJECT_DIR$/api/data/user.pb.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/api/data/drug.pb.go">
+    <entry file="file://$PROJECT_DIR$/api/data/drug.pb.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-945">
           <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/api/api.pb.go">
+    <entry file="file://$PROJECT_DIR$/api/api.pb.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="243" column="5" selection-start-line="243" selection-start-column="5" selection-end-line="243" selection-end-column="5" />
@@ -628,26 +489,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/api/data/user.proto">
+    <entry file="file://$PROJECT_DIR$/api/data/user.proto">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/api/data/drug.proto">
+    <entry file="file://$PROJECT_DIR$/api/data/drug.proto">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4501eeb8-d13a-45e8-8b6f-5d5ccdc62730/schema/ysb_db/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="8d5fc7cf-0503-4999-b8e9-bf176b7aa6b5">
-          <filtering>
-            <filter text="" />
-          </filtering>
         </state>
       </provider>
     </entry>
@@ -660,21 +512,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.2.1-0.20190722040647-89ee902bb4f4/pkg/net/http/blademaster/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="472" column="12" selection-start-line="472" selection-start-column="10" selection-end-line="472" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/internal/dao/dao.cache.go">
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.2.1-0.20190722040647-89ee902bb4f4/pkg/net/http/blademaster/server.go" />
+    <entry file="file://$PROJECT_DIR$/internal/dao/dao.cache.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/api/api.bm.go">
+    <entry file="file://$PROJECT_DIR$/api/api.bm.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1805">
           <caret line="100" column="22" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
@@ -684,7 +530,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/internal/dao/durg.go">
+    <entry file="file://$PROJECT_DIR$/internal/dao/durg.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
           <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
@@ -694,14 +540,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/go.mod">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/api/api.proto">
+    <entry file="file://$PROJECT_DIR$/api/api.proto">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
@@ -711,59 +550,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.2.1-0.20190722040647-89ee902bb4f4/pkg/log/log.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/configs/http.toml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.2.1-0.20190722040647-89ee902bb4f4/pkg/cache/memcache/memcache.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="192" column="31" selection-start-line="192" selection-start-column="31" selection-end-line="192" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/configs/memcache.toml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="9" selection-start-line="1" selection-end-line="1" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/configs/application.toml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/internal/dao/dao.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="74" column="21" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/internal/service/drug.go">
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.2.1-0.20190722040647-89ee902bb4f4/pkg/log/log.go" />
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.2.1-0.20190722040647-89ee902bb4f4/pkg/cache/memcache/memcache.go" />
+    <entry file="file://$PROJECT_DIR$/internal/service/drug.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/internal/service/user.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -774,31 +566,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/cmd/main.go">
+    <entry file="file://$PROJECT_DIR$/cmd/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.2.1-0.20190722040647-89ee902bb4f4/pkg/net/http/blademaster/middleware/auth/auth.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/internal/service/service.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app-parity/internal/server/http/server.go">
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/!c-is!coder/kratos@v0.2.1-0.20190722040647-89ee902bb4f4/pkg/net/http/blademaster/middleware/auth/auth.go" />
+    <entry file="file://$PROJECT_DIR$/configs/application.toml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/memcache.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/service/service.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#17#150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/server/http/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/dao/mc.cache.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1831">
+          <caret line="51" column="14" lean-forward="true" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.sum">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4501eeb8-d13a-45e8-8b6f-5d5ccdc62730/schema/ysb_db/table/user.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/dao/dao.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="116" column="1" selection-start-line="116" selection-start-column="1" selection-end-line="116" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4501eeb8-d13a-45e8-8b6f-5d5ccdc62730/schema/ysb_db/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="fde9e997-d17e-4f69-88be-e7d72278feef">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/service/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="e#17#208#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/dao/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding>
+            <element signature="e#13#148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/http.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
         </state>
       </provider>
     </entry>

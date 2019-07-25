@@ -13,7 +13,18 @@ import (
 
 var (
 	svc   *service.Service
-	_cors = []string{"*", "http://192.168.1.254:8080", "http://localhost:8080"}
+	_cors = []string{
+		"*",
+		"http://192.168.1.254:8080",
+		"http://localhost:8080",
+		"http://bijia.ybr1.cn",
+	}
+	_csrf = []string{
+		"*",
+		"http://192.168.1.254:8080",
+		"http://localhost:8080",
+		"http://bijia.ybr1.cn",
+	}
 )
 
 // New new a bm server.
@@ -33,6 +44,7 @@ func New(s *service.Service) (e *bm.Engine) {
 	e = bm.DefaultServer(hc.Server)
 	e.Ping(ping)
 	e.Use(bm.CORS(_cors))
+	e.Use(bm.CSRF(_csrf, []string{}))
 	e.Use(auth.New(&auth.Config{JwtSecret: s.JWT.Secret, Filters: fs}))
 	//e.Inject("^[login]", auth.New(&auth.Config{JwtSecret: s.JwtSecret, Filters: fs}))
 	pb.RegisterUserServiceBMServer(e, svc)
