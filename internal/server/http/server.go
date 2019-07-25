@@ -46,8 +46,8 @@ func New(s *service.Service) (e *bm.Engine) {
 	svc = s
 	e = bm.DefaultServer(hc.Server)
 	e.Ping(ping)
-	e.Use(bm.CORS(_cors))
-	e.Use(bm.CSRF(_csrf, []string{}))
+	//e.Use(bm.CORS(_cors))
+	//e.Use(bm.CSRF(_csrf, []string{}))
 	e.Use(auth.New(&auth.Config{JwtSecret: s.JWT.Secret, Filters: fs}))
 	//e.Inject("^[login]", auth.New(&auth.Config{JwtSecret: s.JwtSecret, Filters: fs}))
 	pb.RegisterUserServiceBMServer(e, svc)
