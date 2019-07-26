@@ -10,4 +10,4 @@ require (
 	google.golang.org/grpc v1.22.0
 )
 
-replace github.com/bilibili/kratos => github.com/C-isCoder/kratos v0.0.0-20190726083933-9e63ae739fe9
+replace github.com/bilibili/kratos => github.com/C-isCoder/kratos v0.0.0-20190726084645-5ae9c2bee5f5
