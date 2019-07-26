@@ -51,7 +51,7 @@ func (s *Service) Register(ctx context.Context, req *pb.RegisterReq) (resp *pb.L
 	resp = &pb.LoginResp{
 		Name:    req.Name,
 		Account: req.Account,
-		Token:   auth.NewToken(s.JWT.Secret, id, req.Name, false, ).String(),
+		Token:   auth.NewToken(s.JWT.Secret, id, req.Name, false).String(),
 	}
 	return resp, nil
 }
