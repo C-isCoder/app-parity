@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"time"
 
+	pb "app-parity/api"
 	"github.com/bilibili/kratos/pkg/cache/memcache"
 	"github.com/bilibili/kratos/pkg/cache/redis"
 	"github.com/bilibili/kratos/pkg/conf/paladin"
 	"github.com/bilibili/kratos/pkg/database/sql"
 	"github.com/bilibili/kratos/pkg/log"
 	xtime "github.com/bilibili/kratos/pkg/time"
-	pb "app-parity/api"
 )
 
 //go:generate kratos tool genmc

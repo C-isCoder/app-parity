@@ -1,9 +1,9 @@
 package dao
 
 import (
+	pb "app-parity/api/data"
 	"context"
 	"github.com/bilibili/kratos/pkg/log"
-	pb "app-parity/api/data"
 )
 
 const (

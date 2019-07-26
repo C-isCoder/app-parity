@@ -8,10 +8,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/bilibili/kratos/pkg/conf/paladin"
-	"github.com/bilibili/kratos/pkg/log"
 	"app-parity/internal/server/http"
 	"app-parity/internal/service"
+	"github.com/bilibili/kratos/pkg/conf/paladin"
+	"github.com/bilibili/kratos/pkg/log"
 )
 
 func main() {

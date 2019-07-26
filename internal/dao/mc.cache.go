@@ -30,13 +30,14 @@ import (
 	"context"
 	"fmt"
 
+	pb "app-parity/api"
 	"github.com/bilibili/kratos/pkg/cache/memcache"
 	"github.com/bilibili/kratos/pkg/log"
-	"github.com/bilibili/kratos/pkg/stat/prom"
-	pb "app-parity/api"
 )
 
-var _ _mc
+var (
+	_ _mc
+)
 
 // CacheDrugs get data from mc
 func (d *Dao) CacheDrugs(c context.Context, id int32) (res []*pb.Drug, err error) {
@@ -47,7 +48,6 @@ func (d *Dao) CacheDrugs(c context.Context, id int32) (res []*pb.Drug, err error
 			err = nil
 			return
 		}
-		prom.BusinessErrCount.Incr("mc:CacheDrugs")
 		log.Errorv(c, log.KV("CacheDrugs", fmt.Sprintf("%+v", err)), log.KV("key", key))
 		return
 	}
@@ -66,7 +66,6 @@ func (d *Dao) CacheNone(c context.Context) (res *pb.Drug, err error) {
 		}
 	}
 	if err != nil {
-		prom.BusinessErrCount.Incr("mc:CacheNone")
 		log.Errorv(c, log.KV("CacheNone", fmt.Sprintf("%+v", err)), log.KV("key", key))
 		return
 	}
@@ -82,7 +81,6 @@ func (d *Dao) CacheString(c context.Context, id string) (res string, err error) 
 			err = nil
 			return
 		}
-		prom.BusinessErrCount.Incr("mc:CacheString")
 		log.Errorv(c, log.KV("CacheString", fmt.Sprintf("%+v", err)), log.KV("key", key))
 		return
 	}
@@ -97,7 +95,6 @@ func (d *Dao) AddCacheDrugs(c context.Context, id int32, val []*pb.Drug) (err er
 	key := cacheId(id)
 	item := &memcache.Item{Key: key, Object: val, Expiration: d.mcExpire, Flags: memcache.FlagJSON}
 	if err = d.mc.Set(c, item); err != nil {
-		prom.BusinessErrCount.Incr("mc:AddCacheDrugs")
 		log.Errorv(c, log.KV("AddCacheDrugs", fmt.Sprintf("%+v", err)), log.KV("key", key))
 		return
 	}
@@ -112,7 +109,6 @@ func (d *Dao) AddCacheNone(c context.Context, val *pb.DrugsResp) (err error) {
 	key := noneKey()
 	item := &memcache.Item{Key: key, Object: val, Expiration: d.mcExpire, Flags: memcache.FlagJSON}
 	if err = d.mc.Set(c, item); err != nil {
-		prom.BusinessErrCount.Incr("mc:AddCacheNone")
 		log.Errorv(c, log.KV("AddCacheNone", fmt.Sprintf("%+v", err)), log.KV("key", key))
 		return
 	}
@@ -128,7 +124,6 @@ func (d *Dao) AddCacheString(c context.Context, id string, val string) (err erro
 	bs := []byte(val)
 	item := &memcache.Item{Key: key, Value: bs, Expiration: d.mcExpire, Flags: memcache.FlagRAW}
 	if err = d.mc.Set(c, item); err != nil {
-		prom.BusinessErrCount.Incr("mc:AddCacheString")
 		log.Errorv(c, log.KV("AddCacheString", fmt.Sprintf("%+v", err)), log.KV("key", key))
 		return
 	}
@@ -143,7 +138,6 @@ func (d *Dao) DelCacheDrugs(c context.Context, id int32) (err error) {
 			err = nil
 			return
 		}
-		prom.BusinessErrCount.Incr("mc:DelCacheDrugs")
 		log.Errorv(c, log.KV("DelCacheDrugs", fmt.Sprintf("%+v", err)), log.KV("key", key))
 		return
 	}
@@ -158,7 +152,6 @@ func (d *Dao) DelCacheNone(c context.Context) (err error) {
 			err = nil
 			return
 		}
-		prom.BusinessErrCount.Incr("mc:DelCacheNone")
 		log.Errorv(c, log.KV("DelCacheNone", fmt.Sprintf("%+v", err)), log.KV("key", key))
 		return
 	}
