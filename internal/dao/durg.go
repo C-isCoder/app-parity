@@ -23,7 +23,7 @@ const (
 )
 
 func (d *Dao) DrugCount(ctx context.Context, key string) (count int32, err error) {
-	err = d.db.QueryRow(ctx, _count, like(key), like(key), like(key), like(key)).Scan(&count)
+	err = d.db.QueryRow(ctx, _count, /*like(key),*/ like(key), like(key), like(key)).Scan(&count)
 	log.Info("count: %d", count)
 	if err != nil {
 		log.Error("d.DrugCount() error(%v)", err)
@@ -34,7 +34,7 @@ func (d *Dao) DrugCount(ctx context.Context, key string) (count int32, err error
 
 func (d *Dao) DrugQuery(ctx context.Context, key string, pageSize, pageNum int32) (ds []*pb.Drug,
 	err error) {
-	rows, err := d.db.Query(ctx, _drug, like(key), like(key), like(key), like(key), pageSize,
+	rows, err := d.db.Query(ctx, _drug, /*like(key),*/ like(key), like(key), like(key), pageSize,
 		pageSize*(pageNum-1))
 	if err != nil {
 		log.Error("d.DrugQuery() error(%v)", err)
@@ -42,20 +42,12 @@ func (d *Dao) DrugQuery(ctx context.Context, key string, pageSize, pageNum int32
 	}
 	defer rows.Close()
 	ds = make([]*pb.Drug, 0)
-	//for rows.Next() {
-	//	d := new(pb.Drug)
-	//	rows.Scan(&d.WholesaleId, &d.Level0, &d.Level1, &d.Level2, &d.DrugName,
-	//		&d.ProviderId, &d.ProviderName, &d.Specification, &d.Unit,
-	//		&d.Manufacturer, &d.ValidDate, &d.ChainPrice, &d.DisPrice,
-	//		&d.MinPrice, &d.MaxPrice, &d.OldPrice, &d.Price, &d.ApprovalNumber, )
-	//	ds = append(ds, d)
-	//}
 	for rows.Next() {
 		d := new(pb.Drug)
 		rows.Scan(&d.WholesaleId, &d.Level0, &d.Level1, &d.Level2, &d.DrugName,
 			&d.ProviderId, &d.ProviderName, &d.Specification, &d.Unit,
 			&d.Manufacturer, &d.ValidDate, &d.ChainPrice, &d.DisPrice,
-			&d.MinPrice, &d.MaxPrice, &d.OldPrice, &d.Price, )
+			&d.MinPrice, &d.MaxPrice, &d.OldPrice, &d.Price, &d.ApprovalNumber, )
 		ds = append(ds, d)
 	}
 	return
