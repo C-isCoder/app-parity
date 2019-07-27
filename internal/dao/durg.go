@@ -47,7 +47,7 @@ func (d *Dao) DrugQuery(ctx context.Context, key string, pageSize, pageNum int32
 		rows.Scan(&d.WholesaleId, &d.Level0, &d.Level1, &d.Level2, &d.DrugName,
 			&d.ProviderId, &d.ProviderName, &d.Specification, &d.Unit,
 			&d.Manufacturer, &d.ValidDate, &d.ChainPrice, &d.DisPrice,
-			&d.MinPrice, &d.MaxPrice, &d.OldPrice, &d.Price, &d.ApprovalNumber, )
+			&d.MinPrice, &d.MaxPrice, &d.OldPrice, &d.Price, /*&d.ApprovalNumber,*/ )
 		ds = append(ds, d)
 	}
 	return
