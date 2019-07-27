@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbea4fa1-051a-4d3d-95bb-392955c3b0c0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4501eeb8-d13a-45e8-8b6f-5d5ccdc62730.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4501eeb8-d13a-45e8-8b6f-5d5ccdc62730.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/icong.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/dao/durg.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/dao/durg.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
