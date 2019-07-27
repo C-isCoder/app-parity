@@ -10,6 +10,7 @@ const (
 	//_drug = "SELECT a.*, b.approval FROM `drug` as a, " +
 	//	"detail as b WHERE (a.drug_name LIKE ? OR a. manufacturer LIKE ? OR a." +
 	//	"provider_name LIKE ? OR b. approval LIKE ?) AND a.wholesale_id = b.wholesale_id LIMIT ? OFFSET ?"
+
 	_drug = "SELECT a.*, b.approval FROM `drug` as a, " +
 		"detail as b WHERE (a.drug_name LIKE ? OR a. manufacturer LIKE ? OR a." +
 		"provider_name LIKE ? OR b. approval LIKE ?) LIMIT ? OFFSET ?"
