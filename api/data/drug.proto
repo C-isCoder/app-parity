@@ -26,9 +26,9 @@ message SearchReq {
 // 搜索返回参数
 message SearchResp {
     // 符合结果总数
-    int32 count = 1;
+    int32 count = 1 [(gogoproto.jsontag) = "count"];
     // 当前搜索结果列表
-    repeated Drug drugs = 2;
+    repeated Drug drugs = 2 [(gogoproto.jsontag) = "drugs"];
 }
 // 药品列表请求参数
 message DrugsReq {
@@ -40,7 +40,7 @@ message DrugsReq {
 // 药品列表返回参数
 message DrugsResp {
     // 药品列表数据
-    repeated Drug drugs = 1;
+    repeated Drug drugs = 1 [(gogoproto.jsontag) = "drugs"];
 }
 // 药品
 message Drug {

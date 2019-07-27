@@ -18,7 +18,7 @@ const (
 
 func (d *Dao) DrugCount(ctx context.Context, key string) (count int32, err error) {
 	err = d.db.QueryRow(ctx, _count, like(key), like(key), like(key), like(key)).Scan(&count)
-	//log.Info("count: %d", count)
+	log.Info("count: %d", count)
 	if err != nil {
 		log.Error("d.DrugCount() error(%v)", err)
 		return
