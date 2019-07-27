@@ -14,9 +14,13 @@ const (
 		"detail as b WHERE (a.drug_name LIKE ? OR a. manufacturer LIKE ? OR a." +
 		"provider_name LIKE ? OR b. approval LIKE ?) LIMIT ? OFFSET ?"
 
+	//_count = "SELECT COUNT(*) FROM `drug` as a, " +
+	//	"detail as b WHERE (a.Drug_name LIKE ? OR a. manufacturer LIKE ? OR a." +
+	//	"provider_name LIKE ? OR b. approval LIKE ?) AND a.wholesale_id = b.wholesale_id"
+
 	_count = "SELECT COUNT(*) FROM `drug` as a, " +
 		"detail as b WHERE (a.Drug_name LIKE ? OR a. manufacturer LIKE ? OR a." +
-		"provider_name LIKE ? OR b. approval LIKE ?) AND a.wholesale_id = b.wholesale_id"
+		"provider_name LIKE ? OR b. approval LIKE ?)"
 
 	_drugs = "SELECT * FROM `drug` LIMIT ? OFFSET ?"
 )
