@@ -8,20 +8,16 @@ import (
 
 const (
 	//_drug = "SELECT a.*, b.approval FROM `drug` as a, " +
-	//	"detail as b WHERE (a.drug_name LIKE ? OR a. manufacturer LIKE ? OR a." +
+	//	"detail as b WHERE (a.drug_name LIKE ? OR a.manufacturer LIKE ? OR a." +
 	//	"provider_name LIKE ? OR b. approval LIKE ?) AND a.wholesale_id = b.wholesale_id LIMIT ? OFFSET ?"
 
-	_drug = "SELECT a.*, b.approval FROM `drug` as a, " +
-		"detail as b WHERE (a.drug_name LIKE ? OR a. manufacturer LIKE ? OR a." +
-		"provider_name LIKE ? OR b. approval LIKE ?) LIMIT ? OFFSET ?"
+	_drug = "SELECT * FROM `drug` WHERE (drug_name LIKE ? OR manufacturer LIKE ? OR provider_name LIKE ? ) LIMIT ? OFFSET ?"
 
 	//_count = "SELECT COUNT(*) FROM `drug` as a, " +
 	//	"detail as b WHERE (a.Drug_name LIKE ? OR a. manufacturer LIKE ? OR a." +
 	//	"provider_name LIKE ? OR b. approval LIKE ?) AND a.wholesale_id = b.wholesale_id"
 
-	_count = "SELECT COUNT(*) FROM `drug` as a, " +
-		"detail as b WHERE (a.Drug_name LIKE ? OR a. manufacturer LIKE ? OR a." +
-		"provider_name LIKE ? OR b. approval LIKE ?)"
+	_count = "SELECT COUNT(*) FROM `drug` WHERE (drug_name LIKE ? OR manufacturer LIKE ? OR provider_name LIKE ?)"
 
 	_drugs = "SELECT * FROM `drug` LIMIT ? OFFSET ?"
 )
