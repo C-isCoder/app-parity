@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbea4fa1-051a-4d3d-95bb-392955c3b0c0" name="Default Changelist" comment="" />
+    <list default="true" id="fbea4fa1-051a-4d3d-95bb-392955c3b0c0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,62 +54,12 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>http.toml</find>
-      <find>demoExpire</find>
-      <find>secret</find>
-      <find>jwt_</find>
-      <find>dr</find>
-      <find>dug</find>
-      <find>context deadline exceeded</find>
-      <find>payload</find>
-      <find>hd</find>
-      <find>pd</find>
-      <find>reply</find>
-      <find>data</find>
-      <find>model</find>
-      <find>was not found or had errors.</find>
-      <find>user.data.</find>
-      <find>drug.data.</find>
-      <find>application.toml</find>
-      <find>AllowAllOrigins</find>
-      <find>jwt</find>
-      <find>google_protobuf1</find>
-      <find>pb.</find>
-      <find>go-ybr-parity</find>
-      <find>app.toml</find>
-      <find>log</find>
-      <find>logHost</find>
-      <find>server</find>
-      <find>addr</find>
-      <find>memExpire</find>
-      <find>jwtSecret</find>
-      <find>pkg/stat/prom</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>d</replace>
-      <replace>Drug</replace>
-      <replace>p</replace>
-      <replace>resp</replace>
-      <replace>pb</replace>
-      <replace>app.toml</replace>
-      <replace>app-parity</replace>
-      <replace>application.toml</replace>
-    </replaceStrings>
-  </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go/1.12.7/libexec" />
+  <component name="GOROOT" path="/usr/local/Cellar/go/1.12.9/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="39" />
-    <option name="y" value="23" />
-    <option name="width" value="1881" />
-    <option name="height" value="1057" />
   </component>
   <component name="ProjectId" id="1OZmz57wuBJ6QCFPcnFgT2jYo4e" />
   <component name="PropertiesComponent">
@@ -132,18 +84,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/api/data" />
-      <recent name="$PROJECT_DIR$/api" />
-      <recent name="$PROJECT_DIR$/server/http/mid" />
-      <recent name="$PROJECT_DIR$/internal" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/internal" />
       <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$/api/data" />
       <recent name="$PROJECT_DIR$/server/http/mid" />
       <recent name="$PROJECT_DIR$/model/user" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api/data" />
+      <recent name="$PROJECT_DIR$/api" />
+      <recent name="$PROJECT_DIR$/server/http/mid" />
+      <recent name="$PROJECT_DIR$/internal" />
     </key>
   </component>
   <component name="RunDashboard">
